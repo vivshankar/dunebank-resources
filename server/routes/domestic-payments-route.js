@@ -8,5 +8,8 @@ const jsonParser = Express.json();
 
 // define routes
 router.post('/', jsonParser, handler.create);
+router.get('/heath', (req, res) => {
+    res.send("good")
+})
 
 module.exports = router;
